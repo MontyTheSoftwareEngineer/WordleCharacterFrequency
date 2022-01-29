@@ -36,11 +36,12 @@ MainController::MainController(QObject *parent) : QObject(parent)
         qDebug() << "Letter " << letter;
 
         //create counter for letter x position
-        int occurenceRate = 0;
+
 
         //check that letter in each space for every single word
         for ( int spaceCount = 0; spaceCount < 5; spaceCount++ )
         {
+            int occurenceRate = 0;
             //iterating through every word in the list
             foreach ( const QString word, m_wordleList )
             {
